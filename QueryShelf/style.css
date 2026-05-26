@@ -1,0 +1,195 @@
+* { margin: 0; padding: 0; }
+        nav { display: flex; justify-content: center; gap: 25px; margin-bottom: 35px; padding: 20px; }
+        nav a { text-decoration: none; color: #ffffff; border: 2px solid #ffffff; padding: 12px 45px; border-radius: 15px; font-weight: 600; font-size: 1rem; letter-spacing: 0.5px; transition: all 0.2s ease-in-out; display: inline-block; }
+        nav a:hover { background-color: #ffffff; color: #a100e6; }
+        nav a.active { background-color: #ffffff; color: #a100e6; }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #d17bf6;
+    overflow: hidden; 
+}
+
+.split-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh; 
+}
+
+.left-panel {
+    flex: 1;
+    background-image: linear-gradient(#d37ae2b3, #8d00f8b3), url("/QueryShelf/assets/books.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    height: 100vh; 
+    box-sizing: border-box;
+}
+
+.brand-content h1 {
+    font-size: 3.5rem;
+    margin: 0 0 10px 0;
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+
+.brand-content p {
+    font-size: 1.3rem;
+    color: #f5f0fab3;
+    max-width: 400px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.right-panel {
+    flex: 1;
+    background-color: #efe5f8b3;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+    padding: 40px 20px; 
+    position: relative; 
+    box-sizing: border-box;
+    height: 100vh; 
+    overflow-y: auto; 
+}
+
+.form-box {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    margin: auto 0;
+}
+
+.form-box h2 {
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+    color: #aa06e6;
+}
+
+.form-box p {
+    color: #72648b;
+    margin-bottom: 30px;
+}
+
+.action-button-group {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.continue-btn {
+    flex: 1; 
+    display: block;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none; 
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.primary-btn {
+    background-color: #aa06e6;
+    color: white;
+    border: 2px solid #aa06e6;
+}
+
+.primary-btn:hover {
+    background-color: #c876e6; 
+    border-color: #c876e6;
+    color: black;
+    box-shadow: 0 4px 12px rgba(124, 3, 169, 0.25);
+}
+
+.secondary-btn {
+    background-color: #c876e6;
+    color: black;
+    border: 2px solid #c876e6;
+}
+
+.secondary-btn:hover {
+    background-color: #aa06e6; 
+    border-color: #aa06e6;
+    color: white;
+    box-shadow: 0 4px 12px rgba(49, 39, 66, 0.25);
+}
+
+.about-footer {
+    margin-top: 30px;
+    text-align: center; 
+}
+
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.about-link-heading {
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center; 
+    gap: 8px; 
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #aa06e6;
+    font-weight: 700;
+    text-decoration: none; 
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent; 
+    transition: all 0.2s ease;
+}
+
+.about-link-heading:hover {
+    border-color: #aa06e6; 
+}
+
+.about-link-heading .bi {
+    transition: transform 0.2s ease;
+}
+
+.about-link-heading:hover .bi {
+    transform: scale(1.15);
+
+@media (max-width: 768px) {
+    html, body {
+        overflow: auto; 
+    }
+    .split-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .left-panel {
+        height: auto;
+        min-height: 30vh;
+        padding: 40px 20px;
+    }
+    .right-panel {
+        height: auto;
+        padding: 40px 20px;
+        overflow-y: visible;
+    }
+    .action-button-group {
+        flex-direction: column;
+    }
+    .brand-content h1 {
+        font-size: 2.5rem;
+    }
+}
+}
