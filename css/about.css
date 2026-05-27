@@ -1,0 +1,125 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: ghostwhite;
+    overflow: hidden; 
+}
+
+.split-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh; 
+}
+
+.left-panel {
+    flex: 1;
+    background-image: linear-gradient(#d37ae2b3, #8d00f8b3), url("/QueryShelf/assets/books.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    height: 100vh; 
+    box-sizing: border-box;
+}
+
+.brand-content h1 {
+    font-size: 3.5rem;
+    margin: 0 0 10px 0;
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+
+.brand-content p {
+    font-size: 1.3rem;
+    color: #f5f0fab3;
+    max-width: 400px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.right-panel {
+    flex: 1;
+    background-color: #efe5f8b3;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+    padding: 40px 20px; 
+    position: relative; 
+    box-sizing: border-box;
+    height: 100vh; 
+    overflow-y: auto; 
+}
+
+.form-box {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    margin: auto 0;
+}
+
+.about-box {
+    max-width: 520px !important;
+    text-align: left !important;
+}
+
+.about-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 800;
+    color: #aa06e6;
+}
+
+.about-text-content p {
+    color: #4a3e61;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+.corner-back-btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #aa06e6;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+.corner-back-btn:hover {
+    background-color: rgba(170, 6, 230, 0.08); 
+    color: #7c03a9;
+}
+
+.corner-back-btn .bi {
+    font-size: 16px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.corner-back-btn:hover .bi {
+    transform: translateX(-4px); 
+}
+
+@media (max-width: 768px) {
+    .corner-back-btn {
+        position: relative; 
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+        align-self: flex-start;
+    }
+}
